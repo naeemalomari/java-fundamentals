@@ -1,3 +1,8 @@
-# java-fundamentals
+# java-fundamentals.
 
-# hello i am naeem 
+# Classes
+## Main.class
+## Main.java 
+
+
+# methods : pluralize , flipNHeads, clock 

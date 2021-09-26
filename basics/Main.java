@@ -29,15 +29,14 @@ public class Main {
     public static void flipNHeads(int n) {
         int primary = 0;
         int flips = 0;
-        int headsCounter = 0;
         while (primary != n) {
-            double random = Math.random();
-            if (random < .5) {
+            double number = Math.random();
+            if (number < 0.5) {
                 System.out.println("TaIlS");
                 primary = 0;
                 flips++;
             }
-            if (random >= .5) {
+            if (number >= 0.5) {
                 System.out.println("HeAdS");
                 primary++;
                 flips++;
@@ -48,7 +47,7 @@ public class Main {
         public static void clock() throws InterruptedException{
             while (true) {
                 LocalDateTime now = LocalDateTime.now();
-                int second = now.getSecond();
+                // int second = now.getSecond();
                 Thread.sleep(1000);
                     String time = now.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
                 System.out.println(time);
