@@ -17,7 +17,8 @@ public class Main {
         clock();
     }
 
-   public static String pluralize(String animal, int numbers){
+
+    public static String pluralize(String animal, int numbers){
 
         if(numbers == 0 || numbers > 1){
             return animal + "s";
@@ -53,4 +54,14 @@ public class Main {
                 System.out.println(time);
             }
         }
+    public static int[] reverse(int[] array) {
+        int index = array.length -1 ;
+        int looping = array.length/2;
+        for(int i=0;i<looping;i++){
+            int saved = array[i];
+            array[i]= array[index-i];
+            array[index-i]=saved;
+        }
+        return array;
+    }
 }
